@@ -1,0 +1,1487 @@
+{
+  "$schema": "./catalogue.schema.json",
+  "schemaVersion": "1.0.0",
+  "updatedAt": "2026-10-25",
+  "book": {
+    "id": "death-and-life",
+    "title": "The Death and Life of Great American Cities",
+    "author": "Jane Jacobs",
+    "originalPublicationYear": 1961
+  },
+  "editions": [
+    {
+      "id": "knopf-doubleday-epub-2016",
+      "publisher": "Knopf Doubleday Publishing Group",
+      "year": 2016,
+      "isbn": "9780525432852",
+      "description": "Working edition: user-supplied EPUB, Knopf Doubleday Publishing Group, 2016-07-20, ISBN 9780525432852; package metadata also lists source ISBN 9780679741954. Page references follow pagebreak labels embedded in this EPUB, not reader-generated screen numbers. Correspondence with other print editions is not asserted."
+    }
+  ],
+  "chapters": [
+    {
+      "id": "ch01",
+      "number": 1,
+      "title": "Introduction",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch02",
+      "number": 2,
+      "title": "The uses of sidewalks: safety",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch03",
+      "number": 3,
+      "title": "The uses of sidewalks: contact",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch04",
+      "number": 4,
+      "title": "The uses of sidewalks: assimilating children",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch05",
+      "number": 5,
+      "title": "The uses of neighborhood parks",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch06",
+      "number": 6,
+      "title": "The uses of city neighborhoods",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch07",
+      "number": 7,
+      "title": "The generators of diversity",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch08",
+      "number": 8,
+      "title": "The need for primary mixed uses",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch09",
+      "number": 9,
+      "title": "The need for small blocks",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch10",
+      "number": 10,
+      "title": "The need for aged buildings",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch11",
+      "number": 11,
+      "title": "The need for concentration",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch12",
+      "number": 12,
+      "title": "Some myths about diversity",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch13",
+      "number": 13,
+      "title": "The self-destruction of diversity",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch14",
+      "number": 14,
+      "title": "The curse of border vacuums",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch15",
+      "number": 15,
+      "title": "Unslumming and slumming",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch16",
+      "number": 16,
+      "title": "Gradual money and cataclysmic money",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch17",
+      "number": 17,
+      "title": "Subsidizing dwellings",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch18",
+      "number": 18,
+      "title": "Erosion of cities or attrition of automobiles",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch19",
+      "number": 19,
+      "title": "Visual order: its limitations and possibilities",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch20",
+      "number": 20,
+      "title": "Salvaging projects",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch21",
+      "number": 21,
+      "title": "Governing and planning districts",
+      "sourceId": "book-contents"
+    },
+    {
+      "id": "ch22",
+      "number": 22,
+      "title": "The kind of problem a city is",
+      "sourceId": "book-contents"
+    }
+  ],
+  "sources": [
+    {
+      "id": "book-contents",
+      "title": "Book table of contents — university-hosted scan",
+      "url": "https://neu.edu.vn/Resources/Docs/SubDomain/khoamoitruongdothi/2024/jane_jacobs_the_death_and_life_of_great_american.pdf",
+      "accessedAt": "2026-10-22",
+      "kind": "bibliographic",
+      "note": "Chapter numbers and titles checked against the contents on PDF pages 7–8. No book passages or edition-specific page references have been transcribed."
+    },
+    {
+      "id": "hudson-coordinate",
+      "title": "Mapcarta / GeoNames — Hudson Street",
+      "url": "https://mapcarta.com/34349102",
+      "accessedAt": "2026-10-22",
+      "kind": "geographic",
+      "note": "Representative street point: 40.73945, -74.00541. GeoNames identifier 11001712. This is not a verified Jacobs address or the specific block discussed in a passage."
+    },
+    {
+      "id": "rittenhouse-coordinate",
+      "title": "TopoZone — Rittenhouse Square geographic listing",
+      "url": "https://www.topozone.com/pennsylvania/philadelphia-pa/park/rittenhouse-square/",
+      "accessedAt": "2026-10-22",
+      "kind": "geographic",
+      "note": "Park waypoint: 39.9492795, -75.1724005; listed with the Philadelphia USGS map area. A representative point, not a park boundary or historically verified observation location."
+    },
+    {
+      "id": "northend-coordinate",
+      "title": "Mapcarta / OpenStreetMap — North End",
+      "url": "https://mapcarta.com/Boston/North_End",
+      "accessedAt": "2026-10-22",
+      "kind": "geographic",
+      "note": "Neighborhood point: 42.3651, -71.0545. OpenStreetMap node 158809955. Neighborhood extents are not represented by this point."
+    },
+    {
+      "id": "union-coordinate",
+      "title": "Wikidata — Union Square (Q527972)",
+      "url": "https://www.wikidata.org/wiki/Q527972",
+      "accessedAt": "2026-10-22",
+      "kind": "geographic",
+      "note": "Coordinate statement: 37°47′17″N, 122°24′27″W, converted to decimal degrees. The Wikidata statement has no attached reference; independent geographic verification is pending."
+    },
+    {
+      "id": "morningside-heights-coordinate",
+      "title": "Wikipedia — Morningside Heights",
+      "url": "https://en.wikipedia.org/wiki/Morningside_Heights",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "A representative neighborhood point. The passage concerns the area as a whole, not one institution."
+    },
+    {
+      "id": "west-end-coordinate",
+      "title": "Mapcarta / OpenStreetMap — West End",
+      "url": "https://mapcarta.com/29409762",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Modern neighborhood point (OSM node 2074102301). Jacobs discusses the neighborhood before demolition; this marker does not reconstruct its former boundaries."
+    },
+    {
+      "id": "chatham-village-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Chatham Village",
+      "url": "https://mapcarta.com/W464855734",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative point for the residential community (OSM way 464855734), not a particular dwelling."
+    },
+    {
+      "id": "back-of-the-yards-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Back of the Yards",
+      "url": "https://mapcarta.com/22113558",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative district point (OSM node 153453085). The point does not define the district’s boundaries in Jacobs’s time."
+    },
+    {
+      "id": "rockefeller-center-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Rockefeller Center",
+      "url": "https://mapcarta.com/22614096/Map",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative point for the complex (OSM node 4236846689), not the exact position of the extra street discussed in the excerpt."
+    },
+    {
+      "id": "carnegie-hall-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Carnegie Hall",
+      "url": "https://mapcarta.com/22568824",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative building point (OSM way 265148502). The excerpt concerns the concert hall and surrounding neighborhood."
+    },
+    {
+      "id": "stuyvesant-town-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Stuyvesant Town–Peter Cooper Village",
+      "url": "https://mapcarta.com/25010642",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Point within Stuyvesant Town from a source describing the combined Stuyvesant Town–Peter Cooper Village development (OSM way 170294693). Not a building-specific location."
+    },
+    {
+      "id": "eighth-street-coordinate",
+      "title": "Mapcarta / OpenStreetMap — 20 West 8th Street",
+      "url": "https://mapcarta.com/N2550067177",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Modern address point at 20 West 8th Street (OSM node 2550067177), used only to locate the Greenwich Village street. The current business is not identified as a business in Jacobs’s account."
+    },
+    {
+      "id": "washington-square-park-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Washington Square Park",
+      "url": "https://mapcarta.com/22632354",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative park point (OSM way 22899302). This is the New York park, not Washington Square in Philadelphia."
+    },
+    {
+      "id": "central-park-coordinate",
+      "title": "NYC Landmarks Preservation Commission — Central Park",
+      "url": "https://archaeology.cityofnewyork.us/collection/map/central-park/borough/manhattan",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative park point from the city’s archaeological collection map. The excerpt discusses the park’s eastern edge; this point represents the whole park rather than a particular perimeter facility."
+    },
+    {
+      "id": "oakland-coordinate",
+      "title": "Mapcarta / OpenStreetMap — Oakland, Pittsburgh",
+      "url": "https://mapcarta.com/Pittsburgh/Oakland",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Representative district point (OSM node 158623661). This is Oakland in Pittsburgh, not the California city."
+    },
+    {
+      "id": "hudson-home-coordinate",
+      "title": "CityRealty — 555 Hudson Street map",
+      "url": "https://www.cityrealty.com/nyc/west-village/555-hudson-street/5256",
+      "accessedAt": "2026-10-25",
+      "kind": "geographic",
+      "note": "Address map point: 40.73536, -74.00631. A representative address point, not a surveyed entrance."
+    },
+    {
+      "id": "hudson-home-history",
+      "title": "Village Preservation — 555 Hudson Street",
+      "url": "https://villagepreservation.org/ia_image/555-hudson-street/",
+      "accessedAt": "2026-10-25",
+      "kind": "historical",
+      "note": "Identifies 555 Hudson Street as Jane Jacobs’s former home."
+    },
+    {
+      "id": "working-epub-2016",
+      "title": "Jane Jacobs — The Death and Life of Great American Cities, supplied EPUB (2016)",
+      "url": null,
+      "accessedAt": "2026-10-25",
+      "kind": "textual",
+      "note": "Project owner’s supplied edition, ISBN 9780525432852; source ISBN 9780679741954. Citations use embedded EPUB pagebreak labels and exact paragraph anchors. The full EPUB is not distributed with this website."
+    }
+  ],
+  "places": [
+    {
+      "id": "hudson-street",
+      "name": "Hudson Street",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "street",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -74.00631,
+            40.73536
+          ]
+        },
+        "precision": "representative",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "hudson-home-coordinate",
+          "hudson-home-history"
+        ],
+        "note": "Representative point at 555 Hudson Street, Jacobs’s former home, used to locate the stretch she describes. The passage concerns the street, not only this building."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "hudson-street-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "IibfNVpl_xF1gH-gBwHkNg",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2026-04",
+        "note": "Google Street View labeled 558 Hudson St, April 2026, on the block near Jacobs’s former home at 555 Hudson Street. The initial view looks along the street; it is not a reconstruction of 1961.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927401203!6m8!1m7!1sIibfNVpl_xF1gH-gBwHkNg!2m2!1d40.73543882015132!2d-74.0060280375815!3f41.250862486108076!4f0!5f0.7820865974627469"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "rittenhouse-square",
+      "name": "Rittenhouse Square",
+      "city": "Philadelphia",
+      "region": "Pennsylvania",
+      "country": "US",
+      "type": "park",
+      "aliases": [
+        "Rittenhouse",
+        "Philly"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -75.1724005,
+            39.9492795
+          ]
+        },
+        "precision": "representative",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "rittenhouse-coordinate"
+        ],
+        "note": "A sourced park waypoint, used to represent the square as a whole. It does not identify a particular entrance, bench or observation described in the book."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "rittenhouse-square-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "CIHM0ogKEICAgIDO_vm3PA",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 200,
+        "verifiedAt": "2026-10-25",
+        "captureDate": null,
+        "note": "Contributor panorama by Mark Henninger inside Rittenhouse Square. Visually checked through Google Maps. The contributor panel showed July 2022 while the capture footer showed May 2019, so the capture month is left unconfirmed. This contemporary view does not establish a match to the book.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792862821066!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRE9fdm0zUEE.!2m2!1d39.94928332973001!2d-75.17240599037758!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "north-end",
+      "name": "North End",
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "US",
+      "type": "neighborhood",
+      "aliases": [
+        "Boston North End"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.0545,
+            42.3651
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "northend-coordinate"
+        ],
+        "note": "A neighborhood represented by a single modern map point. Its historical boundaries and the extent relevant to the book remain unverified."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "north-end-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "daUBTU1OBnLmNOrP1jc2MQ",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2026-06",
+        "note": "Google Street View labeled 30 N Bennet St, Boston, June 2026. A representative streetscape within the North End, not a verified address from a book passage.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792863097946!6m8!1m7!1sdaUBTU1OBnLmNOrP1jc2MQ!2m2!1d42.36532329490142!2d-71.05429352772559!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "union-square",
+      "name": "Union Square",
+      "city": "San Francisco",
+      "region": "California",
+      "country": "US",
+      "type": "square",
+      "aliases": [
+        "San Francisco Union Square",
+        "SF"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -122.4075,
+            37.78805556
+          ]
+        },
+        "precision": "representative",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "union-coordinate"
+        ],
+        "note": "Representative square point converted from Wikidata’s degrees/minutes/seconds. The source statement is itself unreferenced. Historical correspondence remains unverified."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "union-square-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "CIHM0ogKEICAgICEsvflhAE",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2017-11",
+        "note": "Contributor panorama by Kenny Song in Union Square, San Francisco, November 2017, showing seasonal event installations. Visually checked through Google Maps; not a view of 1961 or a claim about the square’s everyday configuration.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792863153538!6m8!1m7!1sCAoSF0NJSE0wb2dLRUlDQWdJQ0VzdmZsaEFF!2m2!1d37.78805540313579!2d-122.4075012235765!3f191.45684728800646!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "morningside-heights",
+      "name": "Morningside Heights",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "neighborhood",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.96028,
+            40.80972
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "morningside-heights-coordinate"
+        ],
+        "note": "A representative neighborhood point. The passage concerns the area as a whole, not one institution."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "morningside-heights-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "ysO9Ucq2Wc-kjeFvlTnp-w",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2026-08",
+        "note": "Google Street View at 520 W 120th St, August 2026. Representative neighborhood streetscape, not a historical observation point.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927201874!6m8!1m7!1sysO9Ucq2Wc-kjeFvlTnp-w!2m2!1d40.80972857279357!2d-73.96020879036139!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "west-end",
+      "name": "West End",
+      "city": "Boston",
+      "region": "Massachusetts",
+      "country": "US",
+      "type": "neighborhood",
+      "aliases": [],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -71.0639,
+            42.36392
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "changed",
+        "sourceIds": [
+          "west-end-coordinate"
+        ],
+        "note": "Modern neighborhood point (OSM node 2074102301). Jacobs discusses the neighborhood before demolition; this marker does not reconstruct its former boundaries."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "west-end-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "cPN5Z-AR_0k4X58ZR0xebg",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2024-07",
+        "note": "Google Street View within the modern West End, July 2024. This landscaped residential setting does not depict the neighborhood before demolition.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927216240!6m8!1m7!1scPN5Z-AR_0k4X58ZR0xebg!2m2!1d42.36383639058804!2d-71.06392925590785!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "chatham-village",
+      "name": "Chatham Village",
+      "city": "Pittsburgh",
+      "region": "Pennsylvania",
+      "country": "US",
+      "type": "neighborhood",
+      "aliases": [],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -80.01717,
+            40.4298
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "chatham-village-coordinate"
+        ],
+        "note": "Representative point for the residential community (OSM way 464855734), not a particular dwelling."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "chatham-village-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "mWssRxb2Pd8Lf3gxgYWKFg",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2008-04",
+        "note": "Google Street View at 528 Bigham Rd, April 2008, showing housing in Chatham Village. This is a later view, not an image from Jacobs’s time.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927231215!6m8!1m7!1smWssRxb2Pd8Lf3gxgYWKFg!2m2!1d40.4297634815185!2d-80.01712387746554!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "back-of-the-yards",
+      "name": "Back of the Yards",
+      "city": "Chicago",
+      "region": "Illinois",
+      "country": "US",
+      "type": "district",
+      "aliases": [],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -87.66487,
+            41.80478
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "back-of-the-yards-coordinate"
+        ],
+        "note": "Representative district point (OSM node 153453085). The point does not define the district’s boundaries in Jacobs’s time."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "back-of-the-yards-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "h6XimC0MR3Siqy8sShXFKQ",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2026-09",
+        "note": "Google Street View at 4905 S Ashland Ave, September 2026. Representative district streetscape; not the slaughterhouses or a specific location in Jacobs’s account.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927238216!6m8!1m7!1sh6XimC0MR3Siqy8sShXFKQ!2m2!1d41.80476589491833!2d-87.66479318865439!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "rockefeller-center",
+      "name": "Rockefeller Center",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "building",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.9788,
+            40.75885
+          ]
+        },
+        "precision": "representative",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "rockefeller-center-coordinate"
+        ],
+        "note": "Representative point for the complex (OSM node 4236846689), not the exact position of the extra street discussed in the excerpt."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "rockefeller-center-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "BL-kZVp7WTsTIpRBkjJotA",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2024-07",
+        "note": "Google Street View labeled 75 Rockefeller Plaza, July 2024. Outdoor pedestrian space in the complex; contemporary circulation and furnishings differ from Jacobs’s time.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927253029!6m8!1m7!1sBL-kZVp7WTsTIpRBkjJotA!2m2!1d40.75936485448719!2d-73.97816096230524!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "carnegie-hall",
+      "name": "Carnegie Hall",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "building",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.97991,
+            40.765
+          ]
+        },
+        "precision": "representative",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "carnegie-hall-coordinate"
+        ],
+        "note": "Representative building point (OSM way 265148502). The excerpt concerns the concert hall and surrounding neighborhood."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "carnegie-hall-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "ak7Svwx3ceCnPZRfDhFOxw",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2014-09",
+        "note": "Google’s indoor Street View tour of Carnegie Hall, September 2014, showing display galleries. This is an interior view, not the surrounding street or the hall in 1961.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927260047!6m8!1m7!1sak7Svwx3ceCnPZRfDhFOxw!2m2!1d40.76499442647814!2d-73.9799096444345!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "stuyvesant-town",
+      "name": "Stuyvesant Town",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "neighborhood",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.97817,
+            40.73172
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "stuyvesant-town-coordinate"
+        ],
+        "note": "Point within Stuyvesant Town from a source describing the combined Stuyvesant Town–Peter Cooper Village development (OSM way 170294693). Not a building-specific location."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "stuyvesant-town-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "CIHM0ogKEICAgIC49_LTIw",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2015-09",
+        "note": "Contributor panorama by Brendan Gutenschwager at Stuyvesant Oval, September 2015. A contemporary outdoor view within the housing development.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927299036!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJQzQ5X0xUSXc.!2m2!1d40.73166422081088!2d-73.97813047232191!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "eighth-street",
+      "name": "Eighth Street",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "street",
+      "aliases": [
+        "Manhattan",
+        "NYC",
+        "West 8th Street",
+        "Greenwich Village"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.99762,
+            40.73268
+          ]
+        },
+        "precision": "representative",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "eighth-street-coordinate"
+        ],
+        "note": "Modern address point at 20 West 8th Street (OSM node 2550067177), used only to locate the Greenwich Village street. The current business is not identified as a business in Jacobs’s account."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "eighth-street-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "HUEfpjycpEpE-QhXIQUNbg",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2024-09",
+        "note": "Google Street View labeled 14 W 8th St, September 2024. Representative Greenwich Village streetscape; current businesses are not identified with businesses in the passage.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927305068!6m8!1m7!1sHUEfpjycpEpE-QhXIQUNbg!2m2!1d40.73262122408259!2d-73.99721804847472!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "washington-square-park",
+      "name": "Washington Square Park",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "park",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.99759,
+            40.73089
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "washington-square-park-coordinate"
+        ],
+        "note": "Representative park point (OSM way 22899302). This is the New York park, not Washington Square in Philadelphia."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "washington-square-park-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "CIHM0ogKEICAgIDq85bdTg",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2018-10",
+        "note": "Contributor panorama by Shannon Sieber in Washington Square Park, October 2018, showing the fountain and arch. This later pedestrian scene does not depict the park before its closure to automobiles.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927319799!6m8!1m7!1sCAoSFkNJSE0wb2dLRUlDQWdJRHE4NWJkVGc.!2m2!1d40.73088942724093!2d-73.99759689333928!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "central-park",
+      "name": "Central Park",
+      "city": "New York",
+      "region": "New York",
+      "country": "US",
+      "type": "park",
+      "aliases": [
+        "Manhattan",
+        "NYC"
+      ],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -73.96528,
+            40.78222
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "central-park-coordinate"
+        ],
+        "note": "Representative park point from the city’s archaeological collection map. The excerpt discusses the park’s eastern edge; this point represents the whole park rather than a particular perimeter facility."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "central-park-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "vRfO-rQ-UkguDxCgN_FydA",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2012-08",
+        "note": "Google Street View near the Great Lawn, August 2012. A representative park interior, not the eastern perimeter facilities discussed in the excerpt.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927162708!6m8!1m7!1svRfO-rQ-UkguDxCgN_FydA!2m2!1d40.78222950567891!2d-73.96525887378338!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    },
+    {
+      "id": "oakland",
+      "name": "Oakland",
+      "city": "Pittsburgh",
+      "region": "Pennsylvania",
+      "country": "US",
+      "type": "district",
+      "aliases": [],
+      "geography": {
+        "geometry": {
+          "type": "Point",
+          "coordinates": [
+            -79.95575,
+            40.439
+          ]
+        },
+        "precision": "area",
+        "uncertaintyMeters": null,
+        "historicalMatch": "unverified",
+        "sourceIds": [
+          "oakland-coordinate"
+        ],
+        "note": "Representative district point (OSM node 158623661). This is Oakland in Pittsburgh, not the California city."
+      },
+      "status": "verified",
+      "demoChapterIds": [],
+      "mentionIds": [
+        "oakland-passage"
+      ],
+      "editorialNote": "",
+      "streetView": {
+        "mode": "panorama",
+        "panoramaId": "QNdNygXBJMaAOBETDf3UAQ",
+        "heading": null,
+        "pitch": 0,
+        "fov": 90,
+        "radiusMeters": 150,
+        "verifiedAt": "2026-10-25",
+        "captureDate": "2019-07",
+        "note": "Google Street View at 318 York Way, July 2019. Representative residential streetscape within Oakland, Pittsburgh; not a view of the cultural institutions discussed elsewhere in the chapter.",
+        "embedUrl": "https://www.google.com/maps/embed?pb=!4v1792927351969!6m8!1m7!1sQNdNygXBJMaAOBETDf3UAQ!2m2!1d40.438995070901!2d-79.95569104308193!3f0!4f0!5f0.4000000000000002"
+      },
+      "review": {
+        "reviewedBy": "Codex",
+        "reviewedAt": "2026-10-25",
+        "note": "Excerpt and chapter checked against the supplied EPUB. Geographic precision and historical correspondence are documented separately."
+      }
+    }
+  ],
+  "mentions": [
+    {
+      "id": "hudson-street-passage",
+      "placeId": "hudson-street",
+      "chapterId": "ch02",
+      "excerpt": {
+        "text": "The stretch of Hudson Street where I live is each day the scene of an intricate sidewalk ballet. I make my own first entrance into it a little after eight when I put out the garbage can, surely a prosaic occupation, but I enjoy my part, my little clang, as the droves of junior high school students walk by the center of the stage dropping candy wrappers.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "50–51",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c02_r1.xhtml#p88",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "rittenhouse-square-passage",
+      "placeId": "rittenhouse-square",
+      "chapterId": "ch05",
+      "excerpt": {
+        "text": "The best known of Penn’s four squares is Rittenhouse Square, a beloved, successful, much-used park, one of Philadelphia’s greatest assets today, the center of a fashionable neighborhood—indeed, the only old neighborhood in Philadelphia which is spontaneously rehabilitating its edges and extending its real estate values.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "92",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c05_r1.xhtml#p13",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "north-end-passage",
+      "placeId": "north-end",
+      "chapterId": "ch01",
+      "excerpt": {
+        "text": "When I saw the North End again in 1959, I was amazed at the change. Dozens and dozens of buildings had been rehabilitated. Instead of mattresses against the windows there were Venetian blinds and glimpses of fresh paint.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "9",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c01_r1.xhtml#p24",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "union-square-passage",
+      "placeId": "union-square",
+      "chapterId": "ch05",
+      "excerpt": {
+        "text": "Union Square in downtown San Francisco has a plan that looks deadly dull on paper or from a high building; but it is bent onto such changes in ground level, like Dali’s painting of the wet watches, that it appears remarkably various.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "104",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c05_r1.xhtml#p54",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "morningside-heights-passage",
+      "placeId": "morningside-heights",
+      "chapterId": "ch01",
+      "excerpt": {
+        "text": "Consider the Morningside Heights area in New York City. According to planning theory it should not be in trouble at all, for it enjoys a great abundance of parkland, campus, playground and other open spaces.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "5–6",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c01_r1.xhtml#p12",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "west-end-passage",
+      "placeId": "west-end",
+      "chapterId": "ch15",
+      "excerpt": {
+        "text": "Herbert Gans, a sociologist at the University of Pennsylvania, has given, in the February 1959 journal of the American Institute of Planners, a sober but poignant portrait of an unrecognized unslumming slum, the West End of Boston, on the eve of its destruction. The West End, he points out, although regarded officially as a “slum,” would have been more accurately described as “a stable, low-rent area.”",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "272",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c15_r1.xhtml#p8",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination. Jacobs is describing Herbert Gans’s account of the West End; the final phrase is her quotation of Gans."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "chatham-village-passage",
+      "placeId": "chatham-village",
+      "chapterId": "ch03",
+      "excerpt": {
+        "text": "Chatham Village’s success as a “model” neighborhood where much is shared has required that the residents be similar to one another in their standards, interests and backgrounds. In the main they are middle-class professionals and their families.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "64",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c03_r1.xhtml#p38",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "back-of-the-yards-passage",
+      "placeId": "back-of-the-yards",
+      "chapterId": "ch06",
+      "excerpt": {
+        "text": "Nor is there necessity for district self-containment. In Chicago’s Back-of-the-Yards, most of the breadwinners used to work, until the 1940’s, at the slaughterhouses within the district. This did have a bearing on district formation in this case, because district organization here was a sequel to labor union organization.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "133",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c06_r1.xhtml#p81",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "rockefeller-center-passage",
+      "placeId": "rockefeller-center",
+      "chapterId": "ch09",
+      "excerpt": {
+        "text": "To contrast the stagnation of these long blocks with the fluidity of use that an extra street could bring is not a far-fetched supposition. An example of such a transformation can be seen at Rockefeller Center, which occupies three of the long blocks between Fifth and Sixth avenues. Rockefeller Center has that extra street.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "181",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c09_r1.xhtml#p12",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "carnegie-hall-passage",
+      "placeId": "carnegie-hall",
+      "chapterId": "ch08",
+      "excerpt": {
+        "text": "In this case, Carnegie Hall is a vital chessman, working in concert with other chessmen. The most ruinous plan that could be devised for this entire neighborhood would be to destroy Carnegie Hall and replace it with another office building.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "168",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c08_r1.xhtml#p70",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "stuyvesant-town-passage",
+      "placeId": "stuyvesant-town",
+      "chapterId": "ch10",
+      "excerpt": {
+        "text": "Large swatches of construction built at one time are inherently inefficient for sheltering wide ranges of cultural, population, and business diversity. They are even inefficient for sheltering much range of mere commercial diversity. This can be seen at a place like Stuyvesant Town in New York.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "191",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c10_r1.xhtml#p17",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "eighth-street-passage",
+      "placeId": "eighth-street",
+      "chapterId": "ch13",
+      "excerpt": {
+        "text": "Among all the enterprises of Eighth Street, it happened that restaurants became the largest money-earners per square foot of space. Naturally it followed that Eighth Street went more and more to restaurants.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "244",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c13_r1.xhtml#p13",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "washington-square-park-passage",
+      "placeId": "washington-square-park",
+      "chapterId": "ch18",
+      "excerpt": {
+        "text": "Attrition of automobiles by cities is so seldom deliberate that it is hard to find recent examples. (The closing of streets for pedestrian use, being almost always accompanied by compensating provisions for vehicles, is not attrition but rearrangement of traffic.) However, the closing of Washington Square Park in New York to automobiles, beginning in 1958, affords an instance and is worth examining.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "360",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c18_r1.xhtml#p92",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "central-park-passage",
+      "placeId": "central-park",
+      "chapterId": "ch14",
+      "excerpt": {
+        "text": "Consider, for example, Central Park in New York City. Along the east side, it has several examples of intensive use (mostly daytime use) at its perimeter or close inside—the zoo, the Metropolitan Museum of Art, the model boat pond.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "265",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c14_r1.xhtml#p46",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    },
+    {
+      "id": "oakland-passage",
+      "placeId": "oakland",
+      "chapterId": "ch08",
+      "excerpt": {
+        "text": "Because Oakland contains a high disproportion of leisure-time, after-work uses, it is unbalanced too, and Pittsburgh has no good place, either in Oakland or in the working downtown, for generating intensively its principal metropolitan secondary diversity.",
+        "omissionsNoted": false,
+        "transcriptionNote": "Continuous excerpt transcribed from the supplied EPUB. Whitespace normalized; wording and punctuation preserved. No internal omissions."
+      },
+      "citations": [
+        {
+          "editionId": "knopf-doubleday-epub-2016",
+          "pages": "170",
+          "locator": "OEBPS/Jaco_9780525432852_epub3_c08_r1.xhtml#p77",
+          "note": "Page reference follows the pagebreak labels embedded in the supplied EPUB, not reader-generated screen pagination."
+        }
+      ],
+      "explanation": null,
+      "sourceIds": [
+        "working-epub-2016"
+      ],
+      "verification": {
+        "status": "verified",
+        "reviewedBy": "Codex — checked against the supplied EPUB",
+        "reviewedAt": "2026-10-25",
+        "note": "Exact normalized-text match to the cited chapter paragraph; page labels checked character by character. Explanations are reserved for the project owner."
+      }
+    }
+  ]
+}

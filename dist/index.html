@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#f6f4ed">
+<meta name="description" content="Explore the places in Jane Jacobs’s The Death and Life of Great American Cities. MappingJacobs is an interactive visual companion to the book.">
+<title>MappingJacobs — A visual companion to Jane Jacobs</title>
+<link rel="icon" href="icon.svg" type="image/svg+xml"><link rel="stylesheet" href="vendor/leaflet.css"><link rel="stylesheet" href="vendor/MarkerCluster.css"><link rel="stylesheet" href="styles.css">
+<script src="vendor/leaflet.js" defer></script><script src="vendor/leaflet.markercluster.js" defer></script><script type="module" src="app.js"></script>
+</head>
+<body>
+<a class="skip-link" href="#map">Skip to map</a>
+<header class="masthead">
+<a class="brand" href="./" aria-label="MappingJacobs home"><span class="brand-symbol" aria-hidden="true">m<span>j</span></span><span><span class="brand-name">Mapping<span>Jacobs</span></span><span class="subtitle">A visual companion to Jane Jacobs</span></span></a>
+<p class="book-title"><cite>The Death and Life of Great American Cities</cite><span>1961</span></p>
+<button class="about-link" type="button" data-dialog="about-dialog">About <span aria-hidden="true">↗</span></button>
+</header>
+<main class="atlas" id="explorer" aria-label="Explore the book’s places">
+<aside id="chapter-sidebar" class="chapter-sidebar" aria-labelledby="chapters-title">
+<div class="sidebar-heading"><div><span class="micro">THE BOOK</span><h1 id="chapters-title">Chapters</h1></div><button type="button" id="close-chapters" class="icon-button mobile-only" aria-label="Close chapters">×</button></div>
+<nav id="chapter-nav" class="chapter-nav" aria-label="Book chapters"></nav>
+<details id="place-index" class="place-index"><summary>Places in this view <span id="total-count">0</span></summary><div id="place-list" class="place-list"></div></details>
+<div class="sidebar-footer"><button type="button" data-dialog="about-dialog">About this companion & sources <span aria-hidden="true">↗</span></button></div>
+</aside>
+<button id="sidebar-scrim" class="sidebar-scrim" type="button" aria-label="Close chapter sidebar" tabindex="-1" hidden></button>
+<section class="map-panel" aria-label="Interactive map">
+<div id="map" tabindex="0" aria-label="Map of the book’s places. Pan with arrow keys and zoom with plus or minus. A place list is available in the chapter sidebar."></div>
+<div class="map-toolbar">
+<button id="toggle-chapters" type="button" class="toolbar-button mobile-only" aria-expanded="false" aria-controls="chapter-sidebar"><span aria-hidden="true">☰</span> Chapters</button>
+<label class="search-box"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search" type="search" placeholder="Search place or city" aria-label="Search places by name or city" autocomplete="off"></label>
+<button id="reset-map" class="toolbar-button reset-map" type="button" title="Fit all matching places"><span aria-hidden="true">⌖</span><span class="reset-label"> Fit places</span></button>
+</div>
+<div id="search-results" class="search-results" aria-label="Search results" hidden></div>
+<div id="welcome" class="welcome-card"><button id="dismiss-welcome" class="icon-button" type="button" aria-label="Dismiss welcome">×</button><p>Explore the city through Jane Jacobs's eyes. Select a chapter to discover the places behind her arguments, or click any marker on the map to explore a location, its passage from the book, and its significance.</p></div>
+<div id="empty-state" class="empty-state" role="status" hidden><h2 id="empty-title">No places mapped yet</h2><p id="empty-copy"></p><button id="empty-reset" type="button" class="text-button">Show all places</button></div>
+<div class="map-status"><span class="legend-marker" aria-hidden="true"></span><span id="current-chapter-label">All chapters</span><span class="status-divider" aria-hidden="true">·</span><span id="result-count" role="status" aria-live="polite">Loading places…</span><button id="clear-filters" type="button" class="text-button" hidden>Clear</button></div>
+<div id="map-error" class="map-error" role="status" hidden></div>
+<aside id="detail" class="detail-panel" aria-label="Place details" hidden></aside>
+</section>
+</main>
+<dialog id="about-dialog" aria-labelledby="about-title">
+<div class="dialog-top"><span class="micro">MAPPINGJACOBS · LITMAP</span><button class="icon-button" data-close aria-label="Close about">×</button></div>
+<h2 id="about-title">About this companion</h2>
+<p>MappingJacobs is an interactive visual companion to Jane Jacobs’s <cite>The Death and Life of Great American Cities</cite> (1961). It helps readers locate the places she mentions, read relevant excerpts, and understand how those places illustrate her arguments.</p>
+<h3>Using the map</h3><p>Select a chapter to see its mapped places. Choose a marker or use place search to open an entry. You can close an entry without changing your map view. Chapter counts refer to places currently added to this companion, not to all the places mentioned in the book.</p>
+<h3>The fifteen places</h3><p>This collection brings together 15 places that illustrate major themes in the book. It is an editorial selection, not a complete index or a definitive ranking. Each place has a short excerpt checked against the supplied 2016 EPUB. Explanations will be added by the project’s creator. Chapters without a selected passage remain available in the chapter list.</p>
+<h3>Excerpts and source notes</h3><p>Quotations preserve Jacobs’s wording and punctuation, with whitespace normalized. Chapter references and page labels come from the working EPUB: Knopf Doubleday Publishing Group, 2016, ISBN 9780525432852. The page labels are embedded in that file; they are not screen numbers generated by an e-reader, and other editions may differ. Each passage includes its precise EPUB paragraph locator under “Edition &amp; passage location.” Position notes distinguish an address from a representative point for a street, park or neighborhood. Checking a quotation does not establish an exact historical camera position.</p>
+<h3>Contemporary Street View</h3><p>Opening a place entry automatically loads its selected panorama directly from Google. Drag to look around or open it full screen. These views show contemporary surroundings, not how a place appeared in 1961. Check the capture date and attribution inside the viewer. A checked panorama does not establish a historical match to the book. An external Google link remains available if the embedded viewer cannot load.</p>
+<p><a href="data/catalogue.json" download="mappingjacobs-places.json">Download place data ↓</a></p>
+<p class="small">An independent, unofficial educational companion, unaffiliated with the author’s estate or publisher. Book copyright remains with its rights holders. Map data © OpenStreetMap contributors; mapping by Leaflet. Google imagery stays within Google’s official viewer.</p>
+<button class="primary-button" type="button" data-close>Return to the map</button>
+</dialog>
+<noscript><p class="noscript">Enable JavaScript to explore the map, or <a href="data/catalogue.json">open the place data</a>.</p></noscript>
+</body>
+</html>

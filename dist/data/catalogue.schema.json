@@ -1,0 +1,698 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://mappingjacobs.example/schemas/catalogue-1.0.0.json",
+  "title": "MappingJacobs place catalogue",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schemaVersion",
+    "updatedAt",
+    "book",
+    "editions",
+    "chapters",
+    "sources",
+    "places",
+    "mentions"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schemaVersion": {
+      "const": "1.0.0"
+    },
+    "updatedAt": {
+      "type": "string",
+      "format": "date"
+    },
+    "book": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "author",
+        "originalPublicationYear"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string"
+        },
+        "author": {
+          "type": "string"
+        },
+        "originalPublicationYear": {
+          "type": "integer"
+        }
+      }
+    },
+    "editions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/edition"
+      }
+    },
+    "chapters": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/chapter"
+      }
+    },
+    "sources": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/source"
+      }
+    },
+    "places": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/place"
+      }
+    },
+    "mentions": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/mention"
+      }
+    }
+  },
+  "$defs": {
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9-]+$",
+      "minLength": 1
+    },
+    "ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "$ref": "#/$defs/id"
+      }
+    },
+    "nullableText": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "nullableDate": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date"
+    },
+    "review": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "reviewedBy",
+        "reviewedAt",
+        "note"
+      ],
+      "properties": {
+        "reviewedBy": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "reviewedAt": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "edition": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "publisher",
+        "year",
+        "isbn",
+        "description"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "publisher": {
+          "type": "string",
+          "minLength": 1
+        },
+        "year": {
+          "type": "integer"
+        },
+        "isbn": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "description": {
+          "type": "string"
+        }
+      }
+    },
+    "chapter": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "number",
+        "title",
+        "sourceId"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "number": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "title": {
+          "type": "string"
+        },
+        "sourceId": {
+          "$ref": "#/$defs/id"
+        }
+      }
+    },
+    "source": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "title",
+        "url",
+        "accessedAt",
+        "kind",
+        "note"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "title": {
+          "type": "string"
+        },
+        "url": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "uri",
+          "pattern": "^https://"
+        },
+        "accessedAt": {
+          "type": "string",
+          "format": "date"
+        },
+        "kind": {
+          "enum": [
+            "bibliographic",
+            "geographic",
+            "historical",
+            "textual"
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "url": {
+                "type": "null"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "kind": {
+                "enum": [
+                  "textual",
+                  "bibliographic"
+                ]
+              },
+              "note": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "geometry": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "type",
+        "coordinates"
+      ],
+      "properties": {
+        "type": {
+          "const": "Point"
+        },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "prefixItems": [
+            {
+              "type": "number",
+              "minimum": -180,
+              "maximum": 180
+            },
+            {
+              "type": "number",
+              "minimum": -90,
+              "maximum": 90
+            }
+          ]
+        }
+      }
+    },
+    "geography": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "geometry",
+        "precision",
+        "uncertaintyMeters",
+        "historicalMatch",
+        "sourceIds",
+        "note"
+      ],
+      "properties": {
+        "geometry": {
+          "$ref": "#/$defs/geometry"
+        },
+        "precision": {
+          "enum": [
+            "exact",
+            "approximate",
+            "representative",
+            "area",
+            "unknown"
+          ]
+        },
+        "uncertaintyMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "historicalMatch": {
+          "enum": [
+            "verified",
+            "unverified",
+            "changed",
+            "ambiguous"
+          ]
+        },
+        "sourceIds": {
+          "allOf": [
+            {
+              "$ref": "#/$defs/ids"
+            },
+            {
+              "minItems": 1
+            }
+          ]
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "streetView": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "mode",
+        "panoramaId",
+        "heading",
+        "pitch",
+        "fov",
+        "radiusMeters",
+        "verifiedAt",
+        "captureDate",
+        "note"
+      ],
+      "properties": {
+        "embedUrl": {
+          "description": "Exact iframe src copied from Google Maps Share > Embed. Omit until a panorama is selected; never synthesize its opaque payload.",
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^https://www\\.google\\.com/maps/embed\\?pb=.+$"
+        },
+        "mode": {
+          "enum": [
+            "location",
+            "panorama"
+          ]
+        },
+        "panoramaId": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "heading": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 360
+        },
+        "pitch": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "fov": {
+          "type": "number",
+          "minimum": 10,
+          "maximum": 100
+        },
+        "radiusMeters": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "verifiedAt": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "captureDate": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "pattern": "^[0-9]{4}-[0-9]{2}$"
+        },
+        "note": {
+          "type": "string"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "mode": {
+                "const": "panorama"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "panoramaId": {
+                "type": "string",
+                "minLength": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "place": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "name",
+        "city",
+        "region",
+        "country",
+        "type",
+        "aliases",
+        "geography",
+        "status",
+        "demoChapterIds",
+        "mentionIds",
+        "editorialNote",
+        "streetView",
+        "review"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "city": {
+          "type": "string"
+        },
+        "region": {
+          "type": "string"
+        },
+        "country": {
+          "type": "string",
+          "pattern": "^[A-Z]{2}$"
+        },
+        "type": {
+          "enum": [
+            "street",
+            "park",
+            "square",
+            "neighborhood",
+            "building",
+            "district",
+            "city",
+            "other"
+          ]
+        },
+        "aliases": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "geography": {
+          "$ref": "#/$defs/geography"
+        },
+        "status": {
+          "enum": [
+            "demonstration",
+            "draft",
+            "verified",
+            "disputed"
+          ]
+        },
+        "demoChapterIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "mentionIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "editorialNote": {
+          "type": "string"
+        },
+        "streetView": {
+          "$ref": "#/$defs/streetView"
+        },
+        "review": {
+          "$ref": "#/$defs/review"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "verified"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "demoChapterIds": {
+                "maxItems": 0
+              },
+              "mentionIds": {
+                "minItems": 1
+              }
+            }
+          }
+        }
+      ]
+    },
+    "citation": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "editionId",
+        "pages",
+        "locator",
+        "note"
+      ],
+      "properties": {
+        "editionId": {
+          "$ref": "#/$defs/id"
+        },
+        "pages": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "locator": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "excerpt": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "text",
+        "omissionsNoted",
+        "transcriptionNote"
+      ],
+      "properties": {
+        "text": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "omissionsNoted": {
+          "type": "boolean"
+        },
+        "transcriptionNote": {
+          "type": "string"
+        }
+      }
+    },
+    "verification": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "status",
+        "reviewedBy",
+        "reviewedAt",
+        "note"
+      ],
+      "properties": {
+        "status": {
+          "enum": [
+            "unverified",
+            "verified",
+            "disputed"
+          ]
+        },
+        "reviewedBy": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "reviewedAt": {
+          "$ref": "#/$defs/nullableDate"
+        },
+        "note": {
+          "type": "string"
+        }
+      }
+    },
+    "mention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "id",
+        "placeId",
+        "chapterId",
+        "excerpt",
+        "citations",
+        "explanation",
+        "sourceIds",
+        "verification"
+      ],
+      "properties": {
+        "id": {
+          "$ref": "#/$defs/id"
+        },
+        "placeId": {
+          "$ref": "#/$defs/id"
+        },
+        "chapterId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/id"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "excerpt": {
+          "$ref": "#/$defs/excerpt"
+        },
+        "citations": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/citation"
+          }
+        },
+        "explanation": {
+          "$ref": "#/$defs/nullableText"
+        },
+        "sourceIds": {
+          "$ref": "#/$defs/ids"
+        },
+        "verification": {
+          "$ref": "#/$defs/verification"
+        }
+      },
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "verification": {
+                "properties": {
+                  "status": {
+                    "const": "verified"
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "chapterId": {
+                "$ref": "#/$defs/id"
+              },
+              "excerpt": {
+                "properties": {
+                  "text": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                }
+              },
+              "citations": {
+                "minItems": 1
+              },
+              "sourceIds": {
+                "minItems": 1
+              },
+              "verification": {
+                "properties": {
+                  "reviewedBy": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "reviewedAt": {
+                    "type": "string",
+                    "format": "date"
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

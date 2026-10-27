@@ -1,0 +1,16 @@
+import {readFileSync, existsSync} from 'node:fs';
+import {createHash} from 'node:crypto';
+import {execFileSync} from 'node:child_process';
+import {fileURLToPath} from 'node:url';
+import {validateCatalogue} from '../dist/catalogue.js';
+process.chdir(fileURLToPath(new URL('..',import.meta.url)));
+const data=JSON.parse(readFileSync('dist/data/catalogue.json','utf8'));
+JSON.parse(readFileSync('dist/data/catalogue.schema.json','utf8'));
+const errors=validateCatalogue(data);
+if(errors.length) throw new Error(errors.join('\n'));
+for(const file of ['dist/app.js','dist/catalogue.js','dist/config.js','scripts/serve.mjs']) execFileSync(process.execPath,['--check',file],{stdio:'inherit'});
+const hashes={'leaflet.js':'20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=','leaflet.css':'p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY='};
+for(const [file,hash] of Object.entries(hashes)) if(createHash('sha256').update(readFileSync('dist/vendor/'+file)).digest('base64')!==hash) throw new Error('Pinned Leaflet integrity mismatch: '+file);
+for(const file of ['index.html','styles.css','icon.svg','vendor/leaflet.markercluster.js','vendor/MarkerCluster.css','vendor/leaflet.LICENSE','vendor/markercluster.LICENSE']) if(!existsSync('dist/'+file)) throw new Error('Missing static file: '+file);
+execFileSync(process.execPath,['--test','scripts/catalogue.test.mjs'],{stdio:'inherit'});
+console.log(`Checked ${data.places.length} places, ${data.mentions.length} passages, source references, asset integrity and JavaScript syntax.`);

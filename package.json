@@ -1,0 +1,16 @@
+{
+  "name": "mappingjacobs",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "An interactive visual companion to Jane Jacobs’s The Death and Life of Great American Cities",
+  "scripts": {
+    "dev": "node scripts/serve.mjs",
+    "start": "node scripts/serve.mjs",
+    "check": "node scripts/check.mjs",
+    "test": "node --test scripts/catalogue.test.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
