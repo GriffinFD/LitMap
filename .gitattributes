@@ -5,3 +5,6 @@
 *.yml text eol=lf
 *.css text eol=lf
 *.html text eol=lf
+
+# Preserve upstream vendor bytes for integrity checks.
+dist/vendor/** -text
