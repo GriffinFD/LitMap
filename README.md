@@ -1,5 +1,9 @@
 # LitMap / MappingJacobs
 
+Explore the live companion: https://mappingjacobs.github.io/LitMap/
+
+Source repository: https://github.com/MappingJacobs/LitMap
+
 An interactive visual companion to Jane Jacobs’s *The Death and Life of Great American Cities* (1961). The map helps readers locate places, read short excerpts and understand how those places illustrate her arguments. Independent, unofficial and educational.
 
 ## Run locally
